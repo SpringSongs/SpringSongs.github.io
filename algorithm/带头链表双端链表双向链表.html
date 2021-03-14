@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>链表 | SpringSongs</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+		            var _hmt = _hmt || [];
+		            (function() {
+		            var hm = document.createElement("script");
+		            hm.src = "https://hm.baidu.com/hm.js?2d8cd4f00e238b5b4eaacb204a14ae05";
+		            var s = document.getElementsByTagName("script")[0]; 
+		            s.parentNode.insertBefore(hm, s);
+		        </script>
+    <meta name="description" content="快乐编程">
+    <meta name="robots" content="all">
+    <meta name="author" content="SpringSongs">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础,灵山计算机,灵山计算机平面设计,灵山CAD设计,灵山3DMAX设计,灵山计算机教育,灵山编程网,灵山java教育,灵山C#教育,灵山电脑教育,灵山PHP教育,灵山GO语言教育,灵山Python语言教育,灵山SpringBoot教育,灵山SpringCloud教育,灵山单片机教育,灵山网页制作,灵山网站设计,灵山网页建设,灵山网站建设">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.352f42cf.css" as="style"><link rel="preload" href="/assets/js/app.1630b023.js" as="script"><link rel="preload" href="/assets/js/2.6cdf2201.js" as="script"><link rel="preload" href="/assets/js/14.dcd81132.js" as="script"><link rel="prefetch" href="/assets/js/10.276e54cb.js"><link rel="prefetch" href="/assets/js/11.dc3a9197.js"><link rel="prefetch" href="/assets/js/12.35e6d799.js"><link rel="prefetch" href="/assets/js/13.04e63463.js"><link rel="prefetch" href="/assets/js/15.a77b88c8.js"><link rel="prefetch" href="/assets/js/16.03c1ee5a.js"><link rel="prefetch" href="/assets/js/17.e8ec4fac.js"><link rel="prefetch" href="/assets/js/18.28432a83.js"><link rel="prefetch" href="/assets/js/19.39151132.js"><link rel="prefetch" href="/assets/js/20.99db46bd.js"><link rel="prefetch" href="/assets/js/21.de37f12a.js"><link rel="prefetch" href="/assets/js/22.7477e1c3.js"><link rel="prefetch" href="/assets/js/23.f060d083.js"><link rel="prefetch" href="/assets/js/24.c8b6e2e1.js"><link rel="prefetch" href="/assets/js/25.7aecd6e7.js"><link rel="prefetch" href="/assets/js/26.51c9baf5.js"><link rel="prefetch" href="/assets/js/27.a66c79f0.js"><link rel="prefetch" href="/assets/js/28.3c57efab.js"><link rel="prefetch" href="/assets/js/29.405f9aaa.js"><link rel="prefetch" href="/assets/js/3.80aaadeb.js"><link rel="prefetch" href="/assets/js/30.67bd11ab.js"><link rel="prefetch" href="/assets/js/31.9272fb79.js"><link rel="prefetch" href="/assets/js/32.0d223923.js"><link rel="prefetch" href="/assets/js/33.724a4627.js"><link rel="prefetch" href="/assets/js/34.44c3e9bb.js"><link rel="prefetch" href="/assets/js/35.134aa1fa.js"><link rel="prefetch" href="/assets/js/36.fae6358b.js"><link rel="prefetch" href="/assets/js/37.7a367611.js"><link rel="prefetch" href="/assets/js/38.2740e1d1.js"><link rel="prefetch" href="/assets/js/39.8481c5e8.js"><link rel="prefetch" href="/assets/js/4.113ccfdc.js"><link rel="prefetch" href="/assets/js/40.699894e0.js"><link rel="prefetch" href="/assets/js/41.c16e422f.js"><link rel="prefetch" href="/assets/js/42.617bf0a5.js"><link rel="prefetch" href="/assets/js/43.c9160717.js"><link rel="prefetch" href="/assets/js/44.fbf1d697.js"><link rel="prefetch" href="/assets/js/45.9c457493.js"><link rel="prefetch" href="/assets/js/46.691054a8.js"><link rel="prefetch" href="/assets/js/47.46e93cd0.js"><link rel="prefetch" href="/assets/js/48.34236e75.js"><link rel="prefetch" href="/assets/js/49.f8d3c480.js"><link rel="prefetch" href="/assets/js/5.5b4a8e12.js"><link rel="prefetch" href="/assets/js/50.c7802a9e.js"><link rel="prefetch" href="/assets/js/51.2746b4ec.js"><link rel="prefetch" href="/assets/js/52.e969793e.js"><link rel="prefetch" href="/assets/js/53.cbec1c12.js"><link rel="prefetch" href="/assets/js/54.113b8027.js"><link rel="prefetch" href="/assets/js/55.61809eba.js"><link rel="prefetch" href="/assets/js/56.7efe3644.js"><link rel="prefetch" href="/assets/js/57.88ca9754.js"><link rel="prefetch" href="/assets/js/58.ecce9830.js"><link rel="prefetch" href="/assets/js/59.20d8ca4d.js"><link rel="prefetch" href="/assets/js/6.a5498084.js"><link rel="prefetch" href="/assets/js/60.3f0fe9a4.js"><link rel="prefetch" href="/assets/js/61.0eeb70fd.js"><link rel="prefetch" href="/assets/js/62.ccccea4d.js"><link rel="prefetch" href="/assets/js/63.cb9a77aa.js"><link rel="prefetch" href="/assets/js/64.fa1eda29.js"><link rel="prefetch" href="/assets/js/65.57cafbd9.js"><link rel="prefetch" href="/assets/js/66.2c9f30db.js"><link rel="prefetch" href="/assets/js/67.17c5135a.js"><link rel="prefetch" href="/assets/js/7.541a2400.js"><link rel="prefetch" href="/assets/js/8.54b9ab58.js"><link rel="prefetch" href="/assets/js/9.29e7e278.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.352f42cf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">SpringSongs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">编程学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">编程学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c/" class="nav-link">
+  C语言学习
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++学习
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java学习
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Algorithm Menu" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="Algorithm Menu" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/algorithm/" class="nav-link router-link-active">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/design_mode/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase Menu" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="DataBase Menu" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Session Menu" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Session Menu" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/springboot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/springcloud/" class="nav-link">
+  SpringCloud
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">编程学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">编程学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c/" class="nav-link">
+  C语言学习
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++学习
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java学习
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Algorithm Menu" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="Algorithm Menu" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/algorithm/" class="nav-link router-link-active">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/design_mode/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase Menu" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="DataBase Menu" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Session Menu" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Session Menu" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/springboot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/springcloud/" class="nav-link">
+  SpringCloud
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/algorithm/" aria-current="page" class="sidebar-link">排序算法</a></li><li><a href="/algorithm/search.html" class="sidebar-link">查找算法</a></li><li><a href="/algorithm/struct.html" class="sidebar-link">数据结构</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>数组需要一块连续的内存空间来存储，对内存的要求比较高。如果我们申请一个大空间的数组，当内存中没有连续的、足够大的存储空间时，即便内存的剩余总可用空间大于所申请的内存空间，仍然会申请失败。</p> <p>而链表恰恰相反，它并不需要一块连续的内存空间，它通过“指针”将一组零散的内存块串联起来使用，所以如果我们申请的是同样空间大小的链表，根本不会有问题。</p> <p>链表通过指针将一组零散的内存块串联在一起。其中，我们把内存块称为链表的“结点”。为了将所有的结点串起来，每个链表的结点除了存储数据之外，还需要记录链上的下一个结点的地址。</p> <p>与数组一样，链表也支持数据的查找、插入和删除操作。在链接中插入与删除元素所需要的时间复杂度为O(1)，随机访问的时间复杂度为O(N)。</p> <p>经常用来检查链表是否正确的边界4个边界条件：</p> <p>1.如果链表为空时，代码是否能正常工作？</p> <p>2.如果链表只包含一个节点时，代码是否能正常工作？</p> <p>3.如果链表只包含两个节点时，代码是否能正常工作？</p> <p>4.代码逻辑在处理头尾节点时是否能正常工作？</p> <h2 id="带头链表"><a href="#带头链表" class="header-anchor">#</a> 带头链表</h2> <p><img src="/attachment/DataStructureArithmetic/LinkedList/1.jpg" alt="带头链表双端链表双向链表"></p> <p>下面是代码练习:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class MyLinkedList&lt;T&gt; {
+	private int elements;
+	private Node node;
+	private int count;
+
+	public MyLinkedList(int capacity) {
+		this.node = new Node&lt;&gt;();
+		this.count = capacity;
+	}
+
+	private boolean insertNode(T data) {
+		if (this.elements==count)return false;
+		Node next = this.node.getNext();
+		Node newNode = new Node(data, next);
+		this.node.setNext(newNode);
+		this.elements++;
+		return true;
+	}
+
+	private boolean deleteLastNode() {
+		Node preNode = this.node;
+		if (preNode.getNext() == null)
+			return false;
+		while (preNode.getNext().getNext() != null) {
+			preNode = preNode.getNext();
+		}
+		preNode.setNext(null);
+		this.elements--;
+		return true;
+	}
+
+	private Node findByData(T data) {
+		Node preNode = this.node;
+		while (preNode.getNext()!=null) {
+			if (data.equals(preNode.getNext().getData())){
+				return preNode.getNext();
+			}
+			preNode = preNode.getNext();
+		}
+		return null;
+	}
+	
+	private void displayAll() {
+		Node preNode=this.node.getNext();
+		while(preNode!=null) {
+			System.out.print(preNode.getData()+&quot;,&quot;);
+			preNode=preNode.getNext();
+		}
+	}
+
+	private static class Node&lt;T&gt; {
+		private T data;
+		private Node next;
+
+		public Node() {
+			super();
+		}
+
+		public Node(T data, Node next) {
+			this.data = data;
+			this.next = next;
+		}
+
+		public Node getNext() {
+			return next;
+		}
+
+		public void setNext(Node next) {
+			this.next = next;
+		}
+
+		public T getData() {
+			return data;
+		}
+	}
+	
+	public static void main(String[] args) {
+		MyLinkedList&lt;Integer&gt; myLinkedList=new MyLinkedList&lt;Integer&gt;(4);
+		System.out.println(myLinkedList.insertNode(1));
+		System.out.println(myLinkedList.insertNode(2));
+		System.out.println(myLinkedList.insertNode(3));
+		System.out.println(myLinkedList.insertNode(4));
+		//myLinkedList.deleteLastNode();
+		//myLinkedList.deleteLastNode();
+		myLinkedList.displayAll();
+	}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br></div></div><h2 id="双端链表"><a href="#双端链表" class="header-anchor">#</a> 双端链表</h2> <p><img src="/attachment/DataStructureArithmetic/LinkedList/2.jpg" alt="带头链表双端链表双向链表"></p> <p>双端链表与单链表十分相似，不同的是它新增一个对尾结点的引用。双端链表不是双向链表。</p> <p>下面是代码练习:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class MyFirstLastLinkedList {
+
+	private int elements;
+	private int count;
+	private Node first;
+	private Node last;
+
+	public MyFirstLastLinkedList(int capacity) {
+		this.elements = capacity;
+	}
+
+	private boolean insertFirst(int value) {
+		if (count== elements)
+			return false;
+		Node newNode = new Node(value, null);
+		if (first == null) {
+			last = newNode;
+		}
+		newNode.next = first;
+		first = newNode;
+		count++;
+		return true;
+	}
+
+	private boolean insertLast(int value) {
+		if (count== elements)
+			return false;
+		Node newNode = new Node(value, null);
+		if (first == null) {
+			first = newNode;
+		} else {
+			last.next = newNode;
+		}
+		last = newNode;
+		count++;
+		return true;
+	}
+
+	private boolean deleteFirst() {
+		if (first == null) {
+			return false;
+		}
+		if (first.next == null) {
+			last = null;
+			first = null;
+		} else {
+			first = first.next;
+		}
+		count--;
+		return true;
+	}
+
+	private void displayAll() {
+		Node preNode = first;
+		while (preNode != null) {
+			System.out.print(preNode.data + &quot;,&quot;);
+			preNode = preNode.next;
+		}
+	}
+
+	public static class Node {
+		private int data;
+		private Node next;
+
+		public Node(int data, Node next) {
+			super();
+			this.data = data;
+			this.next = next;
+		};
+	}
+	
+	public static void main(String[] args) {
+		MyFirstLastLinkedList myFirstLastLinkedList=new MyFirstLastLinkedList(6);
+		myFirstLastLinkedList.insertLast(10);
+		myFirstLastLinkedList.insertLast(11);
+		myFirstLastLinkedList.insertLast(12);
+		//myFirstLastLinkedList.displayAll();
+		myFirstLastLinkedList.insertFirst(1);
+		myFirstLastLinkedList.insertFirst(2);
+		myFirstLastLinkedList.insertFirst(3);
+		myFirstLastLinkedList.deleteFirst();
+		myFirstLastLinkedList.deleteFirst();
+		myFirstLastLinkedList.deleteFirst();
+		myFirstLastLinkedList.deleteFirst();
+		myFirstLastLinkedList.deleteFirst();
+		myFirstLastLinkedList.deleteFirst();
+		myFirstLastLinkedList.deleteFirst();
+		myFirstLastLinkedList.insertLast(10);
+		myFirstLastLinkedList.insertLast(11);
+		myFirstLastLinkedList.insertLast(12);
+		myFirstLastLinkedList.displayAll();
+	}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1630b023.js" defer></script><script src="/assets/js/2.6cdf2201.js" defer></script><script src="/assets/js/14.dcd81132.js" defer></script>
+  </body>
+</html>

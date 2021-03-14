@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL简介 | SpringSongs</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+		            var _hmt = _hmt || [];
+		            (function() {
+		            var hm = document.createElement("script");
+		            hm.src = "https://hm.baidu.com/hm.js?2d8cd4f00e238b5b4eaacb204a14ae05";
+		            var s = document.getElementsByTagName("script")[0]; 
+		            s.parentNode.insertBefore(hm, s);
+		        </script>
+    <meta name="description" content="快乐编程">
+    <meta name="robots" content="all">
+    <meta name="author" content="SpringSongs">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础,灵山计算机,灵山计算机平面设计,灵山CAD设计,灵山3DMAX设计,灵山计算机教育,灵山编程网,灵山java教育,灵山C#教育,灵山电脑教育,灵山PHP教育,灵山GO语言教育,灵山Python语言教育,灵山SpringBoot教育,灵山SpringCloud教育,灵山单片机教育,灵山网页制作,灵山网站设计,灵山网页建设,灵山网站建设">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.352f42cf.css" as="style"><link rel="preload" href="/assets/js/app.1630b023.js" as="script"><link rel="preload" href="/assets/js/2.6cdf2201.js" as="script"><link rel="preload" href="/assets/js/49.f8d3c480.js" as="script"><link rel="prefetch" href="/assets/js/10.276e54cb.js"><link rel="prefetch" href="/assets/js/11.dc3a9197.js"><link rel="prefetch" href="/assets/js/12.35e6d799.js"><link rel="prefetch" href="/assets/js/13.04e63463.js"><link rel="prefetch" href="/assets/js/14.dcd81132.js"><link rel="prefetch" href="/assets/js/15.a77b88c8.js"><link rel="prefetch" href="/assets/js/16.03c1ee5a.js"><link rel="prefetch" href="/assets/js/17.e8ec4fac.js"><link rel="prefetch" href="/assets/js/18.28432a83.js"><link rel="prefetch" href="/assets/js/19.39151132.js"><link rel="prefetch" href="/assets/js/20.99db46bd.js"><link rel="prefetch" href="/assets/js/21.de37f12a.js"><link rel="prefetch" href="/assets/js/22.7477e1c3.js"><link rel="prefetch" href="/assets/js/23.f060d083.js"><link rel="prefetch" href="/assets/js/24.c8b6e2e1.js"><link rel="prefetch" href="/assets/js/25.7aecd6e7.js"><link rel="prefetch" href="/assets/js/26.51c9baf5.js"><link rel="prefetch" href="/assets/js/27.a66c79f0.js"><link rel="prefetch" href="/assets/js/28.3c57efab.js"><link rel="prefetch" href="/assets/js/29.405f9aaa.js"><link rel="prefetch" href="/assets/js/3.80aaadeb.js"><link rel="prefetch" href="/assets/js/30.67bd11ab.js"><link rel="prefetch" href="/assets/js/31.9272fb79.js"><link rel="prefetch" href="/assets/js/32.0d223923.js"><link rel="prefetch" href="/assets/js/33.724a4627.js"><link rel="prefetch" href="/assets/js/34.44c3e9bb.js"><link rel="prefetch" href="/assets/js/35.134aa1fa.js"><link rel="prefetch" href="/assets/js/36.fae6358b.js"><link rel="prefetch" href="/assets/js/37.7a367611.js"><link rel="prefetch" href="/assets/js/38.2740e1d1.js"><link rel="prefetch" href="/assets/js/39.8481c5e8.js"><link rel="prefetch" href="/assets/js/4.113ccfdc.js"><link rel="prefetch" href="/assets/js/40.699894e0.js"><link rel="prefetch" href="/assets/js/41.c16e422f.js"><link rel="prefetch" href="/assets/js/42.617bf0a5.js"><link rel="prefetch" href="/assets/js/43.c9160717.js"><link rel="prefetch" href="/assets/js/44.fbf1d697.js"><link rel="prefetch" href="/assets/js/45.9c457493.js"><link rel="prefetch" href="/assets/js/46.691054a8.js"><link rel="prefetch" href="/assets/js/47.46e93cd0.js"><link rel="prefetch" href="/assets/js/48.34236e75.js"><link rel="prefetch" href="/assets/js/5.5b4a8e12.js"><link rel="prefetch" href="/assets/js/50.c7802a9e.js"><link rel="prefetch" href="/assets/js/51.2746b4ec.js"><link rel="prefetch" href="/assets/js/52.e969793e.js"><link rel="prefetch" href="/assets/js/53.cbec1c12.js"><link rel="prefetch" href="/assets/js/54.113b8027.js"><link rel="prefetch" href="/assets/js/55.61809eba.js"><link rel="prefetch" href="/assets/js/56.7efe3644.js"><link rel="prefetch" href="/assets/js/57.88ca9754.js"><link rel="prefetch" href="/assets/js/58.ecce9830.js"><link rel="prefetch" href="/assets/js/59.20d8ca4d.js"><link rel="prefetch" href="/assets/js/6.a5498084.js"><link rel="prefetch" href="/assets/js/60.3f0fe9a4.js"><link rel="prefetch" href="/assets/js/61.0eeb70fd.js"><link rel="prefetch" href="/assets/js/62.ccccea4d.js"><link rel="prefetch" href="/assets/js/63.cb9a77aa.js"><link rel="prefetch" href="/assets/js/64.fa1eda29.js"><link rel="prefetch" href="/assets/js/65.57cafbd9.js"><link rel="prefetch" href="/assets/js/66.2c9f30db.js"><link rel="prefetch" href="/assets/js/67.17c5135a.js"><link rel="prefetch" href="/assets/js/7.541a2400.js"><link rel="prefetch" href="/assets/js/8.54b9ab58.js"><link rel="prefetch" href="/assets/js/9.29e7e278.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.352f42cf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">SpringSongs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">编程学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">编程学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c/" class="nav-link">
+  C语言学习
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++学习
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java学习
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Algorithm Menu" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="Algorithm Menu" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/design_mode/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase Menu" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="DataBase Menu" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Session Menu" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Session Menu" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/springboot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/springcloud/" class="nav-link">
+  SpringCloud
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">编程学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">编程学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c/" class="nav-link">
+  C语言学习
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++学习
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java学习
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Algorithm Menu" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="Algorithm Menu" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/design_mode/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase Menu" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="DataBase Menu" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Session Menu" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Session Menu" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/springboot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/springcloud/" class="nav-link">
+  SpringCloud
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/mysql/" aria-current="page" class="active sidebar-link">MySQL简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql/#mysql简介" class="sidebar-link">MySQL简介</a></li><li class="sidebar-sub-header"><a href="/mysql/#如何下载mysql" class="sidebar-link">如何下载MySQL</a></li><li class="sidebar-sub-header"><a href="/mysql/#安装mysql" class="sidebar-link">安装MySQL</a></li></ul></li><li><a href="/mysql/MySQL_Chapter_2_1_DataType.html" class="sidebar-link">数据类型</a></li><li><a href="/mysql/MySQL_Chapter_3_1_Inner_DataBases.html" class="sidebar-link">内置数据库</a></li><li><a href="/mysql/MySQL_Chapter_3_2_SQL_Normal.html" class="sidebar-link">数据定义语句</a></li><li><a href="/mysql/MySQL_Chapter_4_1_MySQL_FUNCTION_ONE.html" class="sidebar-link">函数</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="mysql简介"><a href="#mysql简介" class="header-anchor">#</a> MySQL简介</h2> <p>MySQL是一个关系型数据库管理系统，由瑞典MySQL AB 公司开发，属于 Oracle 旗下产品。MySQL 是最流行的关系型数据库管理系统之一，在 WEB 应用方面，MySQL是最好的 RDBMS (Relational Database Management System，关系数据库管理系统) 应用软件之一。
+MySQL是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。
+MySQL所使用的 SQL 语言是用于访问数据库的最常用标准化语言。MySQL 软件采用了双授权政策，分为社区版和商业版，由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，一般中小型网站的开发都选择 MySQL 作为网站数据库。</p> <h2 id="如何下载mysql"><a href="#如何下载mysql" class="header-anchor">#</a> 如何下载MySQL</h2> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_0.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_1.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_2.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_3.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_4.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_5.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_6.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_7.png"> <img src="/attachment/MySQL/Chapter_1/MySQL_Chapter_1_1_DownLoad_MySQL_8.png"> <h2 id="安装mysql"><a href="#安装mysql" class="header-anchor">#</a> 安装MySQL</h2> <p>https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/binary-installation.html
+https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/windows-installation.html
+https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/osx-installation.html
+https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/linux-installation.html
+https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/uln-installation.html
+https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/solaris-installation.html
+https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/freebsd-installation.html
+https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/source-installation.html</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/mysql/MySQL_Chapter_2_1_DataType.html">
+        数据类型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1630b023.js" defer></script><script src="/assets/js/2.6cdf2201.js" defer></script><script src="/assets/js/49.f8d3c480.js" defer></script>
+  </body>
+</html>

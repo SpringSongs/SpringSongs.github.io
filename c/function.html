@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>函数 | SpringSongs</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+		            var _hmt = _hmt || [];
+		            (function() {
+		            var hm = document.createElement("script");
+		            hm.src = "https://hm.baidu.com/hm.js?2d8cd4f00e238b5b4eaacb204a14ae05";
+		            var s = document.getElementsByTagName("script")[0]; 
+		            s.parentNode.insertBefore(hm, s);
+		        </script>
+    <meta name="description" content="快乐编程">
+    <meta name="robots" content="all">
+    <meta name="author" content="SpringSongs">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础,灵山计算机,灵山计算机平面设计,灵山CAD设计,灵山3DMAX设计,灵山计算机教育,灵山编程网,灵山java教育,灵山C#教育,灵山电脑教育,灵山PHP教育,灵山GO语言教育,灵山Python语言教育,灵山SpringBoot教育,灵山SpringCloud教育,灵山单片机教育,灵山网页制作,灵山网站设计,灵山网页建设,灵山网站建设">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.352f42cf.css" as="style"><link rel="preload" href="/assets/js/app.1630b023.js" as="script"><link rel="preload" href="/assets/js/2.6cdf2201.js" as="script"><link rel="preload" href="/assets/js/24.c8b6e2e1.js" as="script"><link rel="prefetch" href="/assets/js/10.276e54cb.js"><link rel="prefetch" href="/assets/js/11.dc3a9197.js"><link rel="prefetch" href="/assets/js/12.35e6d799.js"><link rel="prefetch" href="/assets/js/13.04e63463.js"><link rel="prefetch" href="/assets/js/14.dcd81132.js"><link rel="prefetch" href="/assets/js/15.a77b88c8.js"><link rel="prefetch" href="/assets/js/16.03c1ee5a.js"><link rel="prefetch" href="/assets/js/17.e8ec4fac.js"><link rel="prefetch" href="/assets/js/18.28432a83.js"><link rel="prefetch" href="/assets/js/19.39151132.js"><link rel="prefetch" href="/assets/js/20.99db46bd.js"><link rel="prefetch" href="/assets/js/21.de37f12a.js"><link rel="prefetch" href="/assets/js/22.7477e1c3.js"><link rel="prefetch" href="/assets/js/23.f060d083.js"><link rel="prefetch" href="/assets/js/25.7aecd6e7.js"><link rel="prefetch" href="/assets/js/26.51c9baf5.js"><link rel="prefetch" href="/assets/js/27.a66c79f0.js"><link rel="prefetch" href="/assets/js/28.3c57efab.js"><link rel="prefetch" href="/assets/js/29.405f9aaa.js"><link rel="prefetch" href="/assets/js/3.80aaadeb.js"><link rel="prefetch" href="/assets/js/30.67bd11ab.js"><link rel="prefetch" href="/assets/js/31.9272fb79.js"><link rel="prefetch" href="/assets/js/32.0d223923.js"><link rel="prefetch" href="/assets/js/33.724a4627.js"><link rel="prefetch" href="/assets/js/34.44c3e9bb.js"><link rel="prefetch" href="/assets/js/35.134aa1fa.js"><link rel="prefetch" href="/assets/js/36.fae6358b.js"><link rel="prefetch" href="/assets/js/37.7a367611.js"><link rel="prefetch" href="/assets/js/38.2740e1d1.js"><link rel="prefetch" href="/assets/js/39.8481c5e8.js"><link rel="prefetch" href="/assets/js/4.113ccfdc.js"><link rel="prefetch" href="/assets/js/40.699894e0.js"><link rel="prefetch" href="/assets/js/41.c16e422f.js"><link rel="prefetch" href="/assets/js/42.617bf0a5.js"><link rel="prefetch" href="/assets/js/43.c9160717.js"><link rel="prefetch" href="/assets/js/44.fbf1d697.js"><link rel="prefetch" href="/assets/js/45.9c457493.js"><link rel="prefetch" href="/assets/js/46.691054a8.js"><link rel="prefetch" href="/assets/js/47.46e93cd0.js"><link rel="prefetch" href="/assets/js/48.34236e75.js"><link rel="prefetch" href="/assets/js/49.f8d3c480.js"><link rel="prefetch" href="/assets/js/5.5b4a8e12.js"><link rel="prefetch" href="/assets/js/50.c7802a9e.js"><link rel="prefetch" href="/assets/js/51.2746b4ec.js"><link rel="prefetch" href="/assets/js/52.e969793e.js"><link rel="prefetch" href="/assets/js/53.cbec1c12.js"><link rel="prefetch" href="/assets/js/54.113b8027.js"><link rel="prefetch" href="/assets/js/55.61809eba.js"><link rel="prefetch" href="/assets/js/56.7efe3644.js"><link rel="prefetch" href="/assets/js/57.88ca9754.js"><link rel="prefetch" href="/assets/js/58.ecce9830.js"><link rel="prefetch" href="/assets/js/59.20d8ca4d.js"><link rel="prefetch" href="/assets/js/6.a5498084.js"><link rel="prefetch" href="/assets/js/60.3f0fe9a4.js"><link rel="prefetch" href="/assets/js/61.0eeb70fd.js"><link rel="prefetch" href="/assets/js/62.ccccea4d.js"><link rel="prefetch" href="/assets/js/63.cb9a77aa.js"><link rel="prefetch" href="/assets/js/64.fa1eda29.js"><link rel="prefetch" href="/assets/js/65.57cafbd9.js"><link rel="prefetch" href="/assets/js/66.2c9f30db.js"><link rel="prefetch" href="/assets/js/67.17c5135a.js"><link rel="prefetch" href="/assets/js/7.541a2400.js"><link rel="prefetch" href="/assets/js/8.54b9ab58.js"><link rel="prefetch" href="/assets/js/9.29e7e278.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.352f42cf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">SpringSongs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">编程学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">编程学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c/" class="nav-link router-link-active">
+  C语言学习
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++学习
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java学习
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Algorithm Menu" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="Algorithm Menu" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/design_mode/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase Menu" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="DataBase Menu" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Session Menu" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Session Menu" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/springboot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/springcloud/" class="nav-link">
+  SpringCloud
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">编程学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">编程学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c/" class="nav-link router-link-active">
+  C语言学习
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++学习
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java学习
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Algorithm Menu" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="Algorithm Menu" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/design_mode/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase Menu" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="DataBase Menu" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Session Menu" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Session Menu" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/springboot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/springcloud/" class="nav-link">
+  SpringCloud
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c/" aria-current="page" class="sidebar-link">C语言基础</a></li><li><a href="/c/array.html" class="sidebar-link">数组</a></li><li><a href="/c/function.html" aria-current="page" class="active sidebar-link">函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c/function.html#自定义函数" class="sidebar-link">自定义函数</a></li><li class="sidebar-sub-header"><a href="/c/function.html#标准库函数和自定义函数" class="sidebar-link">标准库函数和自定义函数</a></li><li class="sidebar-sub-header"><a href="/c/function.html#形参和实参的区别" class="sidebar-link">形参和实参的区别</a></li><li class="sidebar-sub-header"><a href="/c/function.html#全局变量和局部变量" class="sidebar-link">全局变量和局部变量</a></li></ul></li><li><a href="/c/include.html" class="sidebar-link">预处理命令</a></li><li><a href="/c/pointer.html" class="sidebar-link">指针</a></li><li><a href="/c/structs.html" class="sidebar-link">结构体</a></li><li><a href="/c/file.html" class="sidebar-link">文件操作</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="自定义函数"><a href="#自定义函数" class="header-anchor">#</a> 自定义函数</h2> <p>函数是一组语句，这些语句接受输入，进行一些特定的计算并产生输出。是将一些通常或重复完成的任务放在一起，组成一个函数，这样我们就可以调用函数，而不是为不同的输入一次又一次地编写相同的代码。</p> <h4 id="自定义函数的一般格式如下"><a href="#自定义函数的一般格式如下" class="header-anchor">#</a> 自定义函数的一般格式如下：</h4> <div class="language-c line-numbers-mode"><pre class="language-c"><code>DataType <span class="token function">function_name</span> <span class="token punctuation">(</span> <span class="token punctuation">[</span>arg_type arg1<span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span> arg_type argN<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>body<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <ol><li>return-type表示函数返回的数据类型。如果函数没有返回值，则可以void在函数名称之前使用关键字。否则，您将指定函数返回值类型（int对于整数，float对于浮点值，const char *对于字符串等）。</li> <li>function_name表示函数的名称，命名规则和标识符相同。</li> <li>[]表示可以省略。参数省略表示该函数是无参函数，参数不省略表示该函数是有参函数;
+一个函数可以有参数。它们是可选的。如果没有它们，则在括号内插入void也可以什么都不用写，如下所示：</li></ol> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//或者</span>
+<span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//在这种情况下，当我们调用该函数时，将在括号内不加任何名称的情况下调用该函数：</span>
+<span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>如果有一个参数，则指定参数的类型和名称，如下所示：</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//调用函数时，将在括号中传递该参数，如下所示：</span>
+<span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>或者多个参数，如下所示：</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span> value1<span class="token punctuation">,</span><span class="token keyword">int</span> value2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//调用函数时，将在括号中传递该参数，如下所示：</span>
+<span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ol start="4"><li>自定义函数一般放在main()方法的上面，如果需要放在上面，则需要在main()前先声明自定义函数。定义格式为
+<code>return-type function_name ( [arg_type arg1, ..., arg_type argN]);</code></li></ol></div> <h4 id="实例"><a href="#实例" class="header-anchor">#</a> 实例</h4> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//声明自定义函数</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token keyword">const</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> result<span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//调用自定义函数</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;result=%d&quot;</span><span class="token punctuation">,</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//自定义函数</span>
+<span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token operator">&gt;</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> b<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="标准库函数和自定义函数"><a href="#标准库函数和自定义函数" class="header-anchor">#</a> 标准库函数和自定义函数</h2> <p>C语言已经为我们封装好了很多函数，比如<code>stdio.h</code>提供输出函数，使用函数时引入对应的头文件即可。C语言自带的函数称为标准库函数（Library Function）。</p> <h2 id="形参和实参的区别"><a href="#形参和实参的区别" class="header-anchor">#</a> 形参和实参的区别</h2> <p>函数的参数分为形参和实参两种：</p> <ol><li>形参是在定义函数名和函数体的时候使用的参数,目的是用来接收调用该函数时传入的参数,称为形式参数，简称形参。</li> <li>实参是在调用时传递该函数的参数，称为实际参数，简称实参。</li></ol> <p>函数的形参和实参具有以下特点：</p> <ol><li>形参变量只有在函数被调用时才会分配内存，调用结束后，立刻释放内存，所以形参变量只有在函数内部有效，不能在函数外部使用。</li> <li>实参可以是常量、变量、表达式、函数等，无论实参是何种类型的数据，在进行函数调用时，它们都必须有确定的值，以便把这些值传送给形参，所以应该提前用赋值、输入等办法使实参获得确定值。</li> <li>实参和形参在数量上、类型上、顺序上必须严格一致，否则会发生“类型不匹配”的错误。</li></ol> <h2 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="header-anchor">#</a> 全局变量和局部变量</h2> <ol><li>局部变量也称为内部变量。局部变量是在函数内作定义说明的。其作用域仅限于函数内， 离开该函数后再使用这种变量是非法的。在复合语句中也可定义变量，其作用域只在复合语句范围内。</li></ol> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">doSomeThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> a<span class="token punctuation">;</span><span class="token comment">//局部变量,仅在doSomeThing内有效</span>
+	<span class="token keyword">int</span> b<span class="token punctuation">;</span><span class="token comment">//局部变量,仅在doSomeThing内有效</span>
+	<span class="token keyword">return</span> a<span class="token operator">+</span>b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> a<span class="token punctuation">;</span><span class="token comment">//局部变量,仅在main内有效</span>
+	<span class="token keyword">int</span> b<span class="token punctuation">;</span><span class="token comment">//局部变量,仅在main内有效</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol start="2"><li>全局变量也称为外部变量，它是在函数外部定义的变量。它不属于哪一个函数，它属于一个源程序文件。其作用域是整个源程序。</li></ol> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">int</span> a<span class="token punctuation">,</span>b<span class="token punctuation">;</span><span class="token comment">//全局变量</span>
+<span class="token keyword">void</span> <span class="token function">doSomeThing1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> i<span class="token punctuation">,</span>j<span class="token punctuation">;</span><span class="token comment">//全局变量</span>
+<span class="token keyword">void</span> <span class="token function">doSomeThing2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">/* ... */</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c/array.html" class="prev">
+        数组
+      </a></span> <span class="next"><a href="/c/include.html">
+        预处理命令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1630b023.js" defer></script><script src="/assets/js/2.6cdf2201.js" defer></script><script src="/assets/js/24.c8b6e2e1.js" defer></script>
+  </body>
+</html>

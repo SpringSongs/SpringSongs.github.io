@@ -1,0 +1,51 @@
+---
+title: Jquery使用
+---
+## 常用选择器
+- `$("*")` 所有元素
+- `$("#springsongs")` id="springsongs" 的元素。
+- `$(".springsongs")` class="springsongs" 的所有元素。
+- `$(".springsongs,.jackchen")` class="springsongs" 或者class="jackchen" 的所有元素。
+- `$("ul")` 所有ul元素。
+- `$("h1,ul,p")` 所有h1,ul,p元素。
+- `$("p:first")` 第一个 p 元素。
+- `$("p:last")` 最后一个 p 元素。
+- `$("tr:even")` 所有偶数 tr 元素。
+- `$("tr:odd")` 所有奇数 tr 元素。
+- `$("div > p")` div 元素的直接子元素的所有 p 元素
+- `$("div p")` div 元素的后代的所有 p 元素。
+- `$("div + p")` 每个 div 元素相邻的下一个 p 元素。
+- `$("div ~ p")` div 元素同级的所有 p 元素。
+- `$("ul li:eq(3)")` 列表中的第四个元素（index 值从 0 开始）。
+- `$("ul li:gt(3)")` 列举 index 大于 3 的元素。
+- `$("ul li:lt(3)")` 列举 index 小于 3 的元素。
+- `$("[href]")` 所有带有 href 属性的元素。
+- `$("[href='springsongs.htm']")` 所有带有 href 属性且值等于 "springsongs.htm" 的元素。
+- `$("[href!='springsongs.htm']")` 所有带有 href 属性且值不等于 "springsongs.htm" 的元素。
+- `$("[href$='.jpg']")` 所有带有 href 属性且值以 ".jpg" 结尾的元素。
+- `$(":input")` 所有 input 元素。
+- `$(":text")` 所有带有 type="text" 的 input 元素。
+- `$(":password")` 所有带有 type="password" 的 input 元素。
+- `$(":radio")` 所有带有 type="radio" 的 input 元素。
+- `$(":checkbox")` 所有带有 type="checkbox" 的 input 元素。
+- `$(":submit")` 所有带有 type="submit" 的 input 元素。
+- `$(":reset")` 所有带有 type="reset" 的 input 元素。
+- `$(":button")` 所有带有 type="button" 的 input 元素。
+- `$(":image")` 所有带有 type="image" 的 input 元素。
+
+## 设置内容和属性
+- `text()` 设置或返回所选元素的文本内容。
+- `html()` 设置或返回所选元素的内容（包括 HTML 标记）。
+- `val()` 设置或返回表单字段的值。
+- `attr()` 用于设置/改变属性值。
+- `append()` 在被选元素的结尾插入内容。
+- `prepend()` 在被选元素的开头插入内容。
+- `after()` 在被选元素之后插入内容。
+- `before()` 在被选元素之前插入内容。
+- `remove()` 删除被选元素（及其子元素）。
+- `empty()` 从被选元素中删除子元素。
+- `addClass()` 向被选元素添加一个或多个类。
+- `removeClass()` 从被选元素删除一个或多个类。
+- `toggleClass()` 对被选元素进行添加/删除类的切换操作。
+- `css()` 设置或返回样式属性。
+## Ajax方法

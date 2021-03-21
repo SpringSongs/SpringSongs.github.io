@@ -5,10 +5,18 @@
 	* [C语言基础-预处理命令](c-tech/0004-C-Define.md)
 	* [C语言基础-练习题](c-tech/0005-C-Exercise.md)
 	
-* C语言 数据结构与算法
+* 数据结构与算法
     * [C语言排序算法-冒泡排序](arithmetic-tech/0001-C-Bubble-Sort.md)
     * [C语言排序算法-选择排序](arithmetic-tech/0002-C-Selection-Sort.md)
     * [C语言排序算法-插入排序](arithmetic-tech/0003-C-Insertion-Sort.md)
+	* [C语言排序算法-快速排序](arithmetic-tech/0004-C-Quick-Sort.md)
+	* [Java查找算法-二分查找](arithmetic-tech/0031-Java-Binary-Search.md)
+	* [Java数据结构-什么是数组](arithmetic-tech/0041-Java-Array.md)
+	* [Java数据结构-什么是栈](arithmetic-tech/0042-Java-Stack.md)
+	* [Java数据结构-什么是队列](arithmetic-tech/0043-Java-Queue.md)
+	* [Java数据结构-什么是链表](arithmetic-tech/0044-Java-LinkedList.md)
+	* [Java数据结构-什么是哈希表](arithmetic-tech/0045-Java-Hashtable.md)
+	* [Java数据结构-什么是树](arithmetic-tech/0046-Java-Tree.md)
 	
 * Servlet 学习篇
     * [Servlet的生命周期](servlet-tech/00001-Life-cycle-of-a-servlet.md)
@@ -24,6 +32,10 @@
 	* [Servlet中的Cookie](servlet-tech/00012-Session-management-and-cookies-in-servlet-with-example.md)
 	* [Servlet中的HttpSession](servlet-tech/00013-HttpSession-In-Servlet.md)
 	
+* JavaScript 学习篇
+	* [JavaScript基础](javascript-tech/001-Javascript.md)
+	* [Jquery使用](javascript-tech/002-JQuery.md)
+
 * MySQL 学习篇
     * [MySQL-数据类型](mysql-tech/0001-MySQL-DataType.md)
     * [MySQL-内置数据库](mysql-tech/0002-MySQL-Inner-DataBases.md)

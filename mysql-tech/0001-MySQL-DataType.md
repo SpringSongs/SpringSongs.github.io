@@ -1,11 +1,4 @@
----
-title: MySQL-数据类型
-date: 2020-01-10
-author: SpringSongs
-tags: 
-  - MySQL
-location: China  
----
+
 ## 整型
 ![SpringSongs：MySQL Chapter 2.1 Integer Types Exact Value TINYINT SMALLINT MEDIUMINT INT BIGINT](/attachment/MySQL/Chapter_2/MySQL_Chapter_2_1_Integer_Types_Exact_Value_TINYINT_SMALLINT_MEDIUMINT_INT_BIGINT.png)
 ![SpringSongs：MySQL Chapter 2.2 Fixed Point Types Exact Value DECIMAL](/attachment/MySQL/Chapter_2/MySQL_Chapter_2_2_Fixed_Point_Types_Exact_Value_DECIMAL.png)

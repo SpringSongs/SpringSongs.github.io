@@ -1,11 +1,4 @@
----
-title: MySQL-数据定义语句
-date: 2020-02-12
-author: SpringSongs
-tags: 
-  - MySQL
-location: China  
----
+
 
 ## SQL常用分类
 ![SpringSongs：Chapter 3.2 SQL Normal](/attachment/MySQL/Chapter_3/MySQL_Chapter_3_2_SQL_Normal.png)

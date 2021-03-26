@@ -1,11 +1,4 @@
----
-title: MySQL-函数
-date: 2020-02-15
-author: SpringSongs
-tags: 
-  - MySQL
-location: China  
----
+
 
 
 ## 字符串函数
